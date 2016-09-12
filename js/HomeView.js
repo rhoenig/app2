@@ -11,11 +11,11 @@ var HomeView = function(store) {
         return this;
     };
 
-    this.findByName = function() {
-        store.findByName($('.search-key').val(), function(employees) {
+    //this.findByName = function() {
+        //store.findByName($('.search-key').val(), function(employees) {
             //$('.employee-list').html(HomeView.liTemplate(employees));
-        });
-    };
+        //});
+    //};
 
     this.initialize();
 
