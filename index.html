@@ -6,30 +6,35 @@
 <body>
 
 <script id="home-tpl" type="text/x-handlebars-template">
-    <div class='header'><h1>Home</h1></div>
-    <div class='center'>
-    <div class='row'><input class='txt' type="text" value="Name"/></div>
-    <div class='row'><input class='txt' type="text" value="DOB"/></div>
-    <div class='row'><input class='txt' type="text" value="Gender Age"/></div>
-    <div class='row'><input class='txt' type="text" value="Email Address"/></div>
-    <div class='row'><input class='txt' type="text" value="Provider"/></div>
-    <div class='row'><input class='txt' type="text" value="Email"/></div>
-    <div class='row'><input class='txt' type="text" value="Username"/></div>
-    <div class='row'><input class='txt' type="text" value="Password"/></div>
-    <div class='row'><input class='txt' type="text" value="Diagnosis"/></div>
-    <div class='row'><input class='txt' type="text" value="Current Symptons"/></div>
-	<br>
-	<div class='row'><input class='btn' type="button" value="Submit"/></div>
-	</div>
+    <div id="container">
+	    <div class='header'><h1>Home</h1></div>
+	    <div id="main">
+		    <div class='center'>
+			    <div class='row'><input class='txt' type="text" value="Name"/></div>
+			    <div class='row'><input class='txt' type="text" value="DOB"/></div>
+			    <div class='row'><input class='txt' type="text" value="Gender Age"/></div>
+			    <div class='row'><input class='txt' type="text" value="Email Address"/></div>
+			    <div class='row'><input class='txt' type="text" value="Provider"/></div>
+			    <div class='row'><input class='txt' type="text" value="Email"/></div>
+			    <div class='row'><input class='txt' type="text" value="Username"/></div>
+			    <div class='row'><input class='txt' type="text" value="Password"/></div>
+			    <div class='row'><input class='txt' type="text" value="Diagnosis"/></div>
+			    <div class='row'><input class='txt' type="text" value="Current Symptons"/></div>
+				<br>
+				<div class='row'><input class='btn' type="button" value="Submit"/></div>
+			</div>
+		</div>	
+		<div id="footer">
+		    <ul>
+		    <li><a href="/feed/">Research Feed</a></li>
+		    <li><a href="/data/">My Data</a></li>
+		    <li><a href="/home/">Home/Today</a></li>
+		    <li><a href="/inbox/">Inbox</a></li>
+		    <li><a href="/community/">My Community</a></li>
+		    </ul>
+	    </div>
+    </div>
 </script>
-
-<!--
-<script id="employee-li-tpl" type="text/x-handlebars-template">
-    {{#.}}
-    <li><a href="#employees/{{this.id}}">{{this.firstName}} {{this.lastName}}<br/>{{this.title}}</a></li>
-    {{/.}}
-</script>
--->
 
 <script src="phonegap.js"></script>
 <script src="lib/jquery-1.8.2.min.js"></script>

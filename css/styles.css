@@ -81,66 +81,6 @@ input[type="search"]:focus {
 	box-shadow: inset 0 4px 8px rgba(0,0,0,.5), 0 1px #fff;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: #fafafa;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-li {
-    display: block;
-    border-top: 1px solid #c0c0c0;
-    padding: 10px;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-li {
-    display: block;
-    border-top: 1px solid #e0e0e0;
-    padding: 10px;
-}
-
-li {
-    padding: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    width: 100%;
-}
-
-li>a {
-    color: #000;
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-    width: 100%;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    box-flex: 1;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-position: -10px 0;
-    background-repeat: no-repeat;
-    -webkit-background-size: 10px 100%;
-    -moz-background-size: 10px 100%;
-    -ms-background-size: 10px 100%;
-    -o-background-size: 10px 100%;
-    background-size: 10px 100%;
-}
-
-li>a * {
-    pointer-events: none;
-}
 
 .button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -193,4 +133,35 @@ h2 {
 
 .center {
 	text-align: center;
+}
+
+#main {
+	padding: 10px;
+}
+
+#footer{ text-align:center; height:58px; padding: 10px;}
+
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#footer li {
+    display: inline-block;
+}
+
+#footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#footer li a:hover {
+    background-color: #111;
 }
