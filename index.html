@@ -1,40 +1,42 @@
 <html>
 <head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 <script src="css/source-sans-pro.js"></script>
 <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
 
-<script id="home-tpl" type="text/x-handlebars-template">
-    <div id="container">
-	    <div class='header'><h1>Home</h1></div>
-	    <div id="main">
-		    <div class='center'>
-			    <div class='row'><input class='txt' type="text" value="Name"/></div>
-			    <div class='row'><input class='txt' type="text" value="DOB"/></div>
-			    <div class='row'><input class='txt' type="text" value="Gender Age"/></div>
-			    <div class='row'><input class='txt' type="text" value="Email Address"/></div>
-			    <div class='row'><input class='txt' type="text" value="Provider"/></div>
-			    <div class='row'><input class='txt' type="text" value="Email"/></div>
-			    <div class='row'><input class='txt' type="text" value="Username"/></div>
-			    <div class='row'><input class='txt' type="text" value="Password"/></div>
-			    <div class='row'><input class='txt' type="text" value="Diagnosis"/></div>
-			    <div class='row'><input class='txt' type="text" value="Current Symptons"/></div>
-				<br>
-				<div class='row'><input class='btn' type="button" value="Submit"/></div>
-			</div>
-		</div>	
-		<div id="footer">
-		    <ul>
-		    <li><a href="/feed/">Research Feed</a></li>
-		    <li><a href="/data/">My Data</a></li>
-		    <li><a href="/home/">Home/Today</a></li>
-		    <li><a href="/inbox/">Inbox</a></li>
-		    <li><a href="/community/">My Community</a></li>
-		    </ul>
-	    </div>
-    </div>
-</script>
+  <div data-role="main" class="ui-content">
+    <p>Welcome! If you click on the link below, it will take you to Page Two.</p>
+    <a href="#pagetwo">Go to Page Two</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>This is Page Two. If you click on the link below, it will take you to Page One.</p>
+    <a href="#pageone">Go to Page One</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
 
 <script src="phonegap.js"></script>
 <script src="lib/jquery-1.8.2.min.js"></script>
