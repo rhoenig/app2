@@ -132,7 +132,80 @@ h2 {
 }
 
 .center {
+	margin: auto;
+    width: 35%;
+    padding: 10px;
+}
+
+.researchodd {
+	margin: 5px;
+	border-top: 3px solid blue;
+	border-bottom: 3px solid blue;
 	text-align: center;
+}
+
+.researcheven {
+	margin: 5px;
+	border-top: 3px solid green;
+	border-bottom: 3px solid green;
+	text-align: center;
+}
+
+.sharebutton {
+	width: 45px;
+	margin: 5px;
+	border: 1px solid black;
+	float: right;
+	clear: both;
+}
+
+.right {
+	float: right;
+}
+
+.active {
+	font-weight: bold;
+	float: left;
+	padding-right: 50px;
+	padding-left: 175px;
+}
+
+.inactive {
+	color: grey;
+	padding-left: 50px;
+	float: left;
+}
+
+.spacer {
+	float: left;
+}
+
+.mainContent {
+	text-align: center;
+}
+
+.dailyReport {
+	background-color: grey;
+	width: 175px;
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin-left: 200px;
+}
+
+.summarygraph {
+	background-color: grey;
+	width: 175px;
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin-left: 200px;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 #main {

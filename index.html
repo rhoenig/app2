@@ -64,57 +64,119 @@
 	</div>
 	
 	<div data-role="page" id="pgresearch">
-	  <div data-role="header">
-	    <h1>My Research</h1>
-	  </div>
+		<div data-role="header">
+			<h1>My Research</h1>
+		</div>
 
-	  <div data-role="main" class="ui-content">
-	    <p>Research information</p>
-	    
-	  </div>
-<div data-role="footer" id="footer">
-		    <ul>
-			    <li><a href="#pgresearch">Research Feed</a></li>
-			    <li><a href="#pgdata">My Data</a></li>
-			    <li><a href="#pgtoday">Home/Today</a></li>
-			    <li><a href="#pginbox">Inbox</a></li>
-			    <li><a href="#pgcommunity">My Community</a></li>
-			    <li><a href="#profile">My Profile</a></li>
-		    </ul>
+		<div data-role="main" class="ui-content">
+			<div class='center'>
+				<div class="researchodd">
+					<p>News Feed - Research Update 1</p>
+					<div class="sharebutton">Share</div>
+					<br><br>
+				</div>
+				
+				<div class="researcheven">
+					<div class="text">
+						<p>News Feed - Research Update 2</p>
+					</div>
+					<div class="sharebutton">Share</div>
+					<br><br>
+				</div>
+			</div>			
+		</div>
+		<div data-role="footer" id="footer">
+			<ul>
+				<li><a href="#pgresearch">Research Feed</a></li>
+				<li><a href="#pgdata">My Data</a></li>
+				<li><a href="#pgtoday">Home/Today</a></li>
+				<li><a href="#pginbox">Inbox</a></li>
+				<li><a href="#pgcommunity">My Community</a></li>
+				<li><a href="#profile">My Profile</a></li>
+			</ul>
 		</div>
 	</div>
 	
 	<div data-role="page" id="pgdata">
-	  <div data-role="header">
-	    <h1>My Data</h1>
-	  </div>
+		<div data-role="header">
+			<h1>My Data</h1>
+		</div>
 
-	  <div data-role="main" class="ui-content">
-	    <p>Data</p>
-	    
-	  </div>
-<div data-role="footer" id="footer">
-		    <ul>
-			    <li><a href="#pgresearch">Research Feed</a></li>
-			    <li><a href="#pgdata">My Data</a></li>
-			    <li><a href="#pgtoday">Home/Today</a></li>
-			    <li><a href="#pginbox">Inbox</a></li>
-			    <li><a href="#pgcommunity">My Community</a></li>
-			    <li><a href="#profile">My Profile</a></li>
-		    </ul>
+		<div data-role="main" class="ui-content">
+			<div class='center'>
+				<div class="mainContent">
+					<div class="active">Activity </div> <div class="spacer"> | </div> <div class="inactive">My Contribution</div>
+					<br>
+					<div class="summarygraph">
+						<p>Summary Graph</p>
+					</div>
+					<br>
+					<div class="summarygraph">
+						<p>Days Tracked this month</p>
+					</div>
+					
+					<br>
+					<div class="summarygraph">
+						<p>Promis Survey Link</p>
+					</div>
+					
+					<br>
+					<div class="dailyReport">
+						<p class="bold">Daily Report View</p>
+						<p>September 1</p>
+						<p>September 2</p>
+						<p>September 3</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" id="footer">
+			<ul>
+				<li><a href="#pgresearch">Research Feed</a></li>
+				<li><a href="#pgdata">My Data</a></li>
+				<li><a href="#pgtoday">Home/Today</a></li>
+				<li><a href="#pginbox">Inbox</a></li>
+				<li><a href="#pgcommunity">My Community</a></li>
+				<li><a href="#profile">My Profile</a></li>
+			</ul>
 		</div>
 	</div>
 	
 	<div data-role="page" id="pgtoday">
-	  <div data-role="header">
-	    <h1>Today</h1>
-	  </div>
+		<div data-role="header">
+			<h1>My Contribution Status</h1>
+		</div>
 
-	  <div data-role="main" class="ui-content">
-	    <p>Inbox information</p>
-	    
-	  </div>
-<div data-role="footer" id="footer">
+		<div data-role="main" class="ui-content">
+			<div class="center">
+				<p>How do you feel today</p>
+				<div id="questions">
+					<input type="radio" name="feel" value="notwell"> Not well<br>
+					<input type="radio" name="feel" value="doingok"> Doing Okay<br>
+					<input type="radio" name="feel" value="prettygood"> Pretty good<br>
+					<input type="radio" name="feel" value="amazing"> Amazing
+				</div>
+				<br>
+				<p>Did you take medication today?</p>
+				<div id="questions">
+					<input type="radio" name="medication" value="yes"> Yes<br>
+					<input type="radio" name="medication" value="no"> No<br>
+				</div>
+				<br>
+				<p>Were you able to work today?</p>
+				<div id="questions">
+					<input type="radio" name="work" value="yes"> Yes<br>
+					<input type="radio" name="work" value="no"> No<br>
+				</div>
+				<br>
+				<p>Are your urine levels within?</p>
+				<div id="questions">
+					<input type="radio" name="urinelevels" value="yes"> Yes<br>
+					<input type="radio" name="urinelevels" value="no"> No<br>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" id="footer">
 		    <ul>
 			    <li><a href="#pgresearch">Research Feed</a></li>
 			    <li><a href="#pgdata">My Data</a></li>
@@ -127,15 +189,31 @@
 	</div>
 	
 	<div data-role="page" id="pgcommunity">
-	  <div data-role="header">
-	    <h1>Community</h1>
-	  </div>
+		<div data-role="header">
+			<h1>Community</h1>
+		</div>
 
-	  <div data-role="main" class="ui-content">
-	    <p>Community information</p>
-	    
-	  </div>
-<div data-role="footer" id="footer">
+		<div data-role="main" class="ui-content">
+			<div class='center'>
+			<p><span class="active">My Profile</span>   |  <span class="inactive">My Community</span> </p>
+				<div>
+					<ul>
+						<li>Diagnosis</li>
+						<li>Weight</li>
+						<li>Urine Levels</li>
+						<li>Baseline Data #3</li>
+						<li>Baseline Data #4</li>
+						<li>Baseline Data #5</li>
+						<li>Baseline Data #6</li>
+						<li>Baseline Data #7</li>
+						<li>Baseline Data #8</li>
+						<li>Baseline Data #9</li>
+						<li>Baseline Data #10</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" id="footer">
 		    <ul>
 			    <li><a href="#pgresearch">Research Feed</a></li>
 			    <li><a href="#pgdata">My Data</a></li>
