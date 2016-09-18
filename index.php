@@ -15,6 +15,11 @@
 
 	  <div data-role="main" class="ui-content">
         <div class='center'>
+        	<?php
+				if($_GET['signedin'] == 'true') {
+        			echo("<div class='row'>You are signed in!</div>");
+        		}
+        	?>
 		    <div class='row'><input class='txt' type="text" value="Name"/></div>
 		    <div class='row'><input class='txt' type="text" value="DOB"/></div>
 		    <div class='row'><input class='txt' type="text" value="Gender Age"/></div>
@@ -196,8 +201,8 @@
 
 		<div data-role="main" class="ui-content">
 			<div class='center'>
-			<p><span class="active">My Profile</span>   |  <span class="inactive">My Community</span> </p>
 				<div>
+				<div class="active">My Profile </div> <div class="spacer"> | </div> <div class="inactive">My Community</div>				<br>	
 					<ul>
 						<li>Diagnosis</li>
 						<li>Weight</li>
