@@ -9,6 +9,9 @@ var app = {
     },
 
     initialize: function() {
+    	if(localStorage.getItem('userInfo') == null){
+  			$.mobile.changePage('login.html');
+		}	
     //    var self = this;
     //    this.store = new MemoryStore(function() {
     //        $('body').html(new HomeView(self.store).render().el);
@@ -37,6 +40,7 @@ $("#login").click(function(){
 				{
 					localStorage.login="true";
 					localStorage.email=email;
+					localStorage.setItem('userInfo', data.d);
 					window.location.href = "index.html?signedin=true";
 				} else if(data="failed") {
 					alert("Login error");
