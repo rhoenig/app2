@@ -40,7 +40,7 @@ $("#login").click(function(){
 					window.location.href = "index.html?signedin=true";
 				} else if(data="failed") {
 					alert("Login error");
-					$("#login").html('Login');
+					window.location.href = "login.html?error=true";
 				}
 			}
 		});
