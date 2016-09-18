@@ -78,3 +78,8 @@ $("#signup").click(function(){
 	});
 	}return false;
 });
+
+$("#logout").click(function(){
+	localStorage.login="false";
+	window.location.href = "login.html";
+});
