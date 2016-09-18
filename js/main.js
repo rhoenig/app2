@@ -8,16 +8,16 @@ var app = {
         }
     },
 
-    //initialize: function() {
+    initialize: function() {
     //    var self = this;
     //    this.store = new MemoryStore(function() {
     //        $('body').html(new HomeView(self.store).render().el);
     //    });
-    //}
+    }
 
 };
 
-//app.initialize();
+app.initialize();
 
 $("#login").click(function(){
 	var email=$("#email").val();
@@ -37,7 +37,7 @@ $("#login").click(function(){
 				{
 					localStorage.login="true";
 					localStorage.email=email;
-					window.location.href = "index.php?signedin=true";
+					window.location.href = "index.html?signedin=true";
 				} else if(data="failed") {
 					alert("Login error");
 					$("#login").html('Login');
