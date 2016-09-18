@@ -18,11 +18,6 @@ var app = {
 };
 
 //app.initialize();
-$.mobile.changePage('index.html', { 
-  dataUrl : "login.html", data : { 
-    'page' : 'events' 
-  }, reloadPage : false, changeHash : true 
-});
 
 $("#login").click(function(){
 	var email=$("#email").val();
