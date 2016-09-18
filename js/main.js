@@ -23,11 +23,11 @@ $("#login").click(function(){
 	var email=$("#email").val();
 	var password=$("#password").val();
 	var dataString="email="+email+"&password="+password+"&login=true";
-	alert(dataString);
+	//alert(dataString);
 	if($.trim(email).length>0 & $.trim(password).length>0) {
 		$.ajax({
 			type: "POST",
-			url: "/dev/login.php",
+			url: "http://testing.hoenigwebdesign.com/dev/login.php",
 			data: dataString,
 			crossDomain: true,
 			cache: false,
