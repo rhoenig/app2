@@ -11,7 +11,7 @@ if(isset($_POST['login'])) {
 	//echo $password;
 	
 	//if($login!=0) {
-	if($email == 'rhoenig@test.com' && $password == 'testing') {
+	if($email == 'test' && $password == 'test') {
 		echo "success";
 	} else {
 		echo "failed";

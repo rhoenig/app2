@@ -23,10 +23,11 @@ var app = {
 app.initialize();
 
 $("#login").click(function(){
+	alert('test');
 	var email=$("#email").val();
 	var password=$("#password").val();
 	var dataString="email="+email+"&password="+password+"&login=true";
-	//alert(dataString);
+	alert(dataString);
 	if($.trim(email).length>0 & $.trim(password).length>0) {
 		$.ajax({
 			type: "POST",
