@@ -40,7 +40,6 @@ $("#login").click(function(){
 				{
 					localStorage.login="true";
 					localStorage.email=email;
-					localStorage.setItem('userInfo', data.d);
 					window.location.href = "index.html?signedin=true";
 				} else if(data="failed") {
 					alert("Login error");
